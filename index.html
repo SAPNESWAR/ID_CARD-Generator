@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>ID_Card Generator</title>
+</head>
+<body>
+
+<div class="back">
+  <form>
+    <h3>Please fill-up the form</h3>
+    <label>Full Name</label>
+    <input type="text" id="inEsignature" placeholder="Your Fullname...">
+    <label>Date of birth</label>
+    <input type="date" id="inBirth" placeholder="Date of birth...">
+    <label>Field</label>
+    <input type="text" id="inField" placeholder="Field...">
+    <label>Year</label>
+    <input type="number" id="inYear" placeholder="Year...">
+    <label>ID-Number</label>
+    <input type="number" id="inNum" placeholder="Employee ID Number...">
+    <label for="file" class="upload">Upload Your Image</label>
+    <br>
+    <span>Choose one that describes you perfectly</span>
+    <input type="file" id="file" accept="image/*" onchange="loadImage(event)">
+    <button type="button" id="preview">Preview</button>
+    <button type="button" id="view">View</button>
+  </form>
+  <div class="container">
+    <canvas id="result" class="card"></canvas>
+    <button id="down">Download</button>
+  </div>
+</div>
+
+<!-- Add these elements -->
+<div id="templateSection">
+  <label>Select Template(s):</label>
+  <select id="template" multiple>
+    <option value="template1">Template 1</option>
+    <option value="template2">Template 2</option>
+    <!-- Add more template options as needed -->
+  </select>
+  <button type="button" id="addTemplate">Add New Template</button>
+</div>
+
+<img id="imgDisplayed" style="display:none;">
+<span id="esignature" style="display:none;"></span>
+<span id="birth" style="display:none;"></span>
+<span id="field" style="display:none;"></span>
+<span id="year" style="display:none;"></span>
+<span id="num" style="display:none;"></span>
+
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body {
+  font: 20px Helvetica, Arial;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h3 {
+  color: #159;
+}
+
+.back {
+  margin-left: 10%;
+}
+
+form {
+  width: 40%;
+  float: left;
+}
+
+.container {
+  width: 40%;
+  float: left;
+  margin-top: 3em;
+  color: #000000;
+  text-align: center;
+}
+
+input {
+  display: table;
+  margin-bottom: 1em;
+  width: 60%;
+  font-size: 16px;
+  border: 2px solid rgb(110, 9, 9);
+  border-radius: 5px;
+  padding: 3px;
+}
+
+#file {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+}
+
+.upload,
+button {
+  color: #fff;
+  background: rgb(109, 75, 5);
+  padding: 5px;
+  border: 2px solid rgb(149, 180, 11);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form span {
+  font-size: 12px;
+}
+
+#preview {
+  font-size: 16px;
+  margin-top: 1em;
+  margin-left: 2em;
+}
+
+#result {
+  position: relative;
+  width: 70%;
+  margin-left: 15%;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  margin-bottom: 2em;
+}
